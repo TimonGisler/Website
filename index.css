@@ -1,0 +1,244 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: white;
+    left: 0px;
+    position: fixed;
+    width: 180px;
+    height: 100vh;
+    box-shadow: 5px 0 5px -7px #333;
+    padding: 0px;
+}
+
+#whole_nav {
+    grid-column: 1/2;
+    grid-row: 1/7;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.c1 {
+    height: 100vh;
+    /* background-image: url(picture/logo.png); */
+    background-color: rgb(56, 158, 153);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.c1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.overlay {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    position: absolute;
+}
+
+.c1 h1 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.411);
+    z-index: 10;
+    position: relative;
+}
+
+.c {
+    padding: 1rem;
+}
+
+nav h1 {
+    font-size: 2rem;
+    margin: 0px;
+    margin-top: 30px;
+    color: rgb(56, 158, 153);
+}
+
+nav h6 {
+    margin-top: 0px;
+}
+
+.logo {
+    border-bottom: 1.5px solid rgb(56, 158, 153);
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    height: auto;
+    padding-bottom: 10px;
+    color: white;
+    background-color: rgb(56, 158, 153);
+    height: 50px;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+h3 {
+    color: rgb(56, 158, 153);
+}
+
+#mahara {
+    width: 100%;
+}
+
+#maharaPicture {
+    border-bottom: 0.5px solid rgb(190, 190, 190);
+}
+
+.card {
+    background-color: white;
+    width: 25rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .cardText {
+    padding: 1rem;
+}
+
+.projekte .cardPicture {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.horizontalCard {
+    height: 10rem;
+    background-color: white;
+    width: 70%;
+    align-items: center;
+    /* min-width: 465px;  */
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.hCardText {
+    padding-top: 2.6rem;
+}
+
+.hCardText h2 {
+    background-color: white;
+    color: black;
+}
+
+.hCardPicture {
+    float: left;
+    width: auto;
+    height: 60%;
+    padding-top: 1.2rem;
+    margin-right: 2rem;
+    padding-left: 2rem;
+}
+
+.hCardPicture img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    width: 1fr;
+    height: 25px;
+    padding: 10px;
+    padding-top: 10%;
+    text-align: center;
+    color: black;
+    /* border-bottom: 1px solid black; */
+    border-bottom: 0.5px solid rgb(190, 190, 190);
+}
+
+.button:hover {
+    background-color: rgb(206, 206, 206);
+    height: 1fr;
+    width: 1fr;
+    border-left: 3px solid rgb(56, 158, 153);
+    ;
+}
+
+/* .button {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 1fr;
+} */
+
+p {
+    font-size: 1.5rem;
+    color: #333333;
+    width: 95%;
+    margin: 20px;
+    line-height: 2.88rem;
+}
+
+@media screen and (max-width: 635px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        background-color: white;
+        grid-template-columns: 1fr;
+        grid-template-rows: [first]auto auto auto auto auto auto auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+        display: none;
+    }
+    #first img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .horizontalCard {
+        height: auto;
+        background-color: rgb(56, 158, 153);
+        width: 90%;
+    }
+    .hCardPicture img {
+        display: none;
+    }
+}
