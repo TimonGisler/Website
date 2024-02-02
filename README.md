@@ -1,4 +1,1 @@
-# Website
-
-Meine persönliche Webseite die ich erstellt habe. <br>
-Live Version unter: [timongisler.com](https://timongisler.com/)
+My portfolio website made with Jekyll (a static site generator) and tailwind. Github pages is the webhost. 
