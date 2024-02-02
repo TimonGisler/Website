@@ -1,1 +1,1 @@
-My portfolio website made with Jekyll (a static site generator) and tailwind. Github pages is the webhost. 
+My first personal website, was suceeded by https://github.com/TimonGisler/personal-portfolio-jekyll
